@@ -142,6 +142,10 @@ img {
 }
 
 .contact-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
@@ -151,9 +155,35 @@ img {
     margin-right: 50px;
 }
 
+
+.contact-list-header::before {
+    content: '';
+    margin-left: 10px;
+    background-color: #fff;
+    background-size: contain;
+}
+
+
 .contact-list-header:hover,
-.contact-list-header:focus {
+.contact-list-header:focus 
+.envelope-header-icon:hover,
+.envelope-header-icon:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
+}
+    
+.envelope-header-icon, .phone-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+
+    margin-right: 10px;
+}
+
+.mail-icon {
+    margin: 0;
+    padding: 0;
 }
 
 .contact-list {
@@ -169,6 +199,8 @@ img {
 .contact-list:focus {
     color: var(--accent-color);
 }
+
+
 
 /* ------герой------ */
 
@@ -252,6 +284,31 @@ img {
 
 .feature-item-list:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+/* .feature-item-list::before {
+    content: '';
+} */
+
+.features-item::before {
+    display: block;
+    
+    content: '';
+    height: 120px;
+    
 }
 
 .visually-hidden {
@@ -402,14 +459,32 @@ img {
 }
 
 .employees-soc-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: tomato;
+    /* background-color: tomato; */
+    color: #AFB1B8;
 
 }
 
+.employees-soc-icon {
+    fill: currentColor;
+}
+
+.employees-soc-link:hover,
+.employees-soc-link:focus {
+    background-color: #2196F3;
+    color: var(--primary-bg-color);
+}
+
+/* 
+.employees-soc-link:hover .employees-soc-icon,
+.employees-soc-link:focus .employees-soc-icon {
+    fill: var(--primary-bg-color);
+} */
 
 /* =======PORTFOLIO======== */
 
