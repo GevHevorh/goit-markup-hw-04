@@ -491,6 +491,11 @@ img {
   padding-bottom: 60px;
 }
 
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .container-footer {
   display: block;
   align-items: center;
@@ -518,9 +523,9 @@ img {
 /* footer-soc */
 
 .footer-soc-title {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   margin-bottom: 10px;
   font-weight: 700;
@@ -534,7 +539,8 @@ img {
 .footer-soc {
   display: block;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 .footer-soc-list {
