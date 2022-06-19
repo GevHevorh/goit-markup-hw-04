@@ -260,6 +260,7 @@ img {
 
 .features {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-title {
@@ -268,14 +269,14 @@ img {
   margin-bottom: 0;
 }
 
-.feature-item-list {
+/* .feature-item-list {
   width: 270px;
   height: 101px;
-}
+} */
 
 .feature-item-list:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .features-icon {
@@ -335,7 +336,7 @@ img {
 /* ------о нас------ */
 
 .about {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
@@ -412,6 +413,7 @@ img {
 
 .clients {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-list {
@@ -422,12 +424,12 @@ img {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
-.clients-item {
+/* .clients-item {
   fill: #afb1b8;
-}
+} */
 
 .clients-icon:hover,
 .clients-icon:focus {
@@ -442,6 +444,7 @@ img {
 
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
