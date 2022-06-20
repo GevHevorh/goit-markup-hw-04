@@ -160,8 +160,15 @@ img {
 }
 
 .contact-list-header:hover,
-.contact-list-header:focus .envelope-header-icon:hover,
-.envelope-header-icon:focus {
+.contact-list-header:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contact-list-header:hover .envelope-header-icon,
+.contact-list-header:focus .envelope-header-icon,
+.contact-list-header:hover .phone-header-icon,
+.contact-list-header:focus .phone-header-icon {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
